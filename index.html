@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#0a0e1a" />
+    <meta name="color-scheme" content="dark light" />
+    <meta name="description" content="On Fire Academy — منصة تعليمية بالفيديو. أشعل مستقبلك." />
+    <link rel="icon" type="image/png" href="/logo-128.webp" />
+    <link rel="apple-touch-icon" href="/logo-128.webp" />
+    <!-- الثيم قبل أول رسم للصفحة: يمنع الوميض الأبيض -->
+    <script>
+      try {
+        var t = localStorage.getItem('of_theme');
+        if (!t) t = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', t);
+        document.querySelector('meta[name="theme-color"]').setAttribute('content', t === 'dark' ? '#0a0e1a' : '#f7f5f2');
+      } catch (e) {}
+    </script>
+    <!-- الخط بدل @import داخل الـ CSS (كان بيعطّل أول عرض). display=swap = النص يظهر فورًا بخط النظام -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" />
+    <title>On Fire Academy</title>
+    <script type="module" crossorigin src="/assets/index-BtFKEqxG.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/react-PDwPvrV1.js">
+    <link rel="modulepreload" crossorigin href="/assets/supabase-CzkH_J5w.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-B_fERhNO.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
